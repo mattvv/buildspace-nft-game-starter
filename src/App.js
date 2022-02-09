@@ -100,15 +100,15 @@ const App = () => {
     }
   };
 
-  const checkNetwork = async () => {
-    try {
-      if (window.ethereum.networkVersion !== "4") {
-        alert("Please connect to Rinkeby! " + window.ethereum.networkVersion);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const checkNetwork = async () => {
+  //   try {
+  //     if (window.ethereum.networkVersion !== "4") {
+  //       alert("Please connect to Rinkeby! " + window.ethereum.networkVersion);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   /*
    * This runs our function when the page loads.
