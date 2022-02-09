@@ -3,7 +3,7 @@ import "./SelectCharacter.css";
 import { ethers } from "ethers";
 import { CONTRACT_ADDRESS, transformCharacterData } from "../../constants";
 import myEpicGame from "../../utils/MyEpicGame.json";
-import LoadingIndicator from '../LoadingIndicator';
+import LoadingIndicator from "../LoadingIndicator";
 
 const SelectCharacter = ({ setCharacterNFT }) => {
   const [characters, setCharacters] = useState([]);
@@ -92,6 +92,7 @@ const SelectCharacter = ({ setCharacterNFT }) => {
         gameContract.off("CharacterNFTMinted", onCharacterMint);
       }
     };
+    // eslint-disable-line react-hooks/exhaustive-deps
   }, [gameContract]);
 
   const renderCharacters = () => {
