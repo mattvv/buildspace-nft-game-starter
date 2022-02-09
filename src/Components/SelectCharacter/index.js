@@ -92,8 +92,7 @@ const SelectCharacter = ({ setCharacterNFT }) => {
         gameContract.off("CharacterNFTMinted", onCharacterMint);
       }
     };
-    // eslint-disable-line react-hooks/exhaustive-deps
-  }, [gameContract]);
+  }, [gameContract]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderCharacters = () => {
     return characters.map((character, index) => (
